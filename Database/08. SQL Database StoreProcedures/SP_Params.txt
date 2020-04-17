@@ -1,0 +1,128 @@
+
+/****** Object:  StoredProcedure [dbo].[Params_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Params_Delete]
+(
+	@PARA_ID int
+)
+
+AS
+
+
+DELETE FROM [Params]
+WHERE [PARA_ID] = @PARA_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Params_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE   
+ PROCEDURE [dbo].[Params_Insert]  
+(  
+ @PARA_Key varchar(5),  
+ @PARA_Value varchar(100),  
+ @PARA_Description varchar(100),  
+ @AUDI_UserCrea varchar(20),  
+ @AUDI_FechCrea datetime  
+)  
+  
+AS  
+  
+  
+INSERT INTO [Params]  
+(  
+ [PARA_Key],  
+ [PARA_Value],  
+ [PARA_Description],  
+ [AUDI_UserCrea],  
+ [AUDI_FechCrea]  
+)  
+VALUES  
+(  
+ @PARA_Key,  
+ @PARA_Value,  
+ @PARA_Description,  
+ @AUDI_UserCrea,  
+ @AUDI_FechCrea  
+)
+GO
+/****** Object:  StoredProcedure [dbo].[Params_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Params_Select]
+(
+	@PARA_ID int
+)
+
+AS
+
+
+SELECT [PARA_ID],
+	[PARA_Key],
+	[PARA_Value],
+	[PARA_Description],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Params]
+WHERE [PARA_ID] = @PARA_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Params_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Params_SelectAll]
+
+AS
+
+
+SELECT [PARA_ID],
+	[PARA_Key],
+	[PARA_Value],
+	[PARA_Description],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Params]
+GO
+/****** Object:  StoredProcedure [dbo].[Params_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE   
+ 
+ PROCEDURE [dbo].[Params_Update]
+(
+	@PARA_ID int,
+	@PARA_Key varchar(5),
+	@PARA_Value varchar(100),
+	@PARA_Description varchar(100),
+	@AUDI_UserModi varchar(20),
+	@AUDI_FechModi datetime
+)
+
+AS
+
+
+UPDATE [Params]
+SET [PARA_Key] = @PARA_Key,
+	[PARA_Value] = @PARA_Value,
+	[PARA_Description] = @PARA_Description,
+	[AUDI_UserModi] = @AUDI_UserModi,
+	[AUDI_FechModi] = @AUDI_FechModi
+WHERE [PARA_ID] = @PARA_ID
+GO

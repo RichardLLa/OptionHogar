@@ -1,0 +1,171 @@
+
+/****** Object:  StoredProcedure [dbo].[Users_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Users_Delete]
+(
+	@USER_ID int
+)
+
+AS
+
+
+DELETE FROM [Users]
+WHERE [USER_ID] = @USER_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Users_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Users_Insert]
+(
+	@PERS_ID int,
+	@USER_Email varchar(25),
+	@USER_Password varchar(1),
+	@USER_Admin bit,
+	@USER_Status char(1),
+	@AUDI_UserCrea varchar(20),
+	@AUDI_FechCrea datetime
+)
+
+AS
+
+
+INSERT INTO [Users]
+(
+	[PERS_ID],
+	[USER_Email],
+	[USER_Password],
+	[USER_Admin],
+	[USER_Status],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea]
+)
+VALUES
+(
+	@PERS_ID,
+	@USER_Email,
+	@USER_Password,
+	@USER_Admin,
+	@USER_Status,
+	@AUDI_UserCrea,
+	@AUDI_FechCrea
+)
+GO
+/****** Object:  StoredProcedure [dbo].[Users_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Users_Select]
+(
+	@USER_ID int
+)
+
+AS
+
+
+SELECT [USER_ID],
+	[PERS_ID],
+	[USER_Email],
+	[USER_Password],
+	[USER_Admin],
+	[USER_Status],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Users]
+WHERE [USER_ID] = @USER_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Users_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ 
+
+CREATE PROCEDURE [dbo].[Users_SelectAll]
+
+AS
+
+
+SELECT [USER_ID],
+	[PERS_ID],
+	[USER_Email],
+	[USER_Password],
+	[USER_Admin],
+	[USER_Status],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Users]
+GO
+/****** Object:  StoredProcedure [dbo].[Users_SelectAllByPERS_ID]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ 
+
+CREATE PROCEDURE [dbo].[Users_SelectAllByPERS_ID]
+(
+	@PERS_ID int
+)
+
+AS
+
+
+SELECT [USER_ID],
+	[PERS_ID],
+	[USER_Email],
+	[USER_Password],
+	[USER_Admin],
+	[USER_Status],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Users]
+WHERE [PERS_ID] = @PERS_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Users_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Users_Update]
+(
+	@USER_ID int,
+	@PERS_ID int,
+	@USER_Email varchar(25),
+	@USER_Password varchar(1),
+	@USER_Admin bit,
+	@USER_Status char(1),
+	@AUDI_UserModi varchar(20),
+	@AUDI_FechModi datetime
+)
+
+AS
+
+
+UPDATE [Users]
+SET [PERS_ID] = @PERS_ID,
+	[USER_Email] = @USER_Email,
+	[USER_Password] = @USER_Password,
+	[USER_Admin] = @USER_Admin,
+	[USER_Status] = @USER_Status,
+	[AUDI_UserModi] = @AUDI_UserModi,
+	[AUDI_FechModi] = @AUDI_FechModi
+WHERE [USER_ID] = @USER_ID
+GO

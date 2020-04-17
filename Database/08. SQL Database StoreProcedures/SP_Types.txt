@@ -1,0 +1,154 @@
+
+/****** Object:  StoredProcedure [dbo].[Types_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Types_Delete]
+(
+	@TYPE_CodTable varchar(3),
+	@TYPE_CodType varchar(3)
+)
+
+AS
+
+
+DELETE FROM [Types]
+WHERE [TYPE_CodTable] = @TYPE_CodTable
+	AND [TYPE_CodType] = @TYPE_CodType
+GO
+/****** Object:  StoredProcedure [dbo].[Types_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Types_Insert]
+(
+	@TYPE_CodTable varchar(3),
+	@TYPE_CodType varchar(3),
+	@TYPE_Desc1 varchar(100),
+	@TYPE_Desc2 varchar(100),
+	@TYPE_Num1 int,
+	@TYPE_Num2 int,
+	@TYPE_Status char(1),
+	@AUDI_UserCrea varchar(20),
+	@AUDI_FechCrea datetime
+)
+
+AS
+
+
+INSERT INTO [Types]
+(
+	[TYPE_CodTable],
+	[TYPE_CodType],
+	[TYPE_Desc1],
+	[TYPE_Desc2],
+	[TYPE_Num1],
+	[TYPE_Num2],
+	[TYPE_Status],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea]
+)
+VALUES
+(
+	@TYPE_CodTable,
+	@TYPE_CodType,
+	@TYPE_Desc1,
+	@TYPE_Desc2,
+	@TYPE_Num1,
+	@TYPE_Num2,
+	@TYPE_Status,
+	@AUDI_UserCrea,
+	@AUDI_FechCrea
+)
+GO
+/****** Object:  StoredProcedure [dbo].[Types_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Types_Select]
+(
+	@TYPE_CodTable varchar(3),
+	@TYPE_CodType varchar(3)
+)
+
+AS
+
+
+SELECT [TYPE_CodTable],
+	[TYPE_CodType],
+	[TYPE_Desc1],
+	[TYPE_Desc2],
+	[TYPE_Num1],
+	[TYPE_Num2],
+	[TYPE_Status],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Types]
+WHERE [TYPE_CodTable] = @TYPE_CodTable
+	AND [TYPE_CodType] = @TYPE_CodType
+GO
+/****** Object:  StoredProcedure [dbo].[Types_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Types_SelectAll]
+
+AS
+
+
+SELECT [TYPE_CodTable],
+	[TYPE_CodType],
+	[TYPE_Desc1],
+	[TYPE_Desc2],
+	[TYPE_Num1],
+	[TYPE_Num2],
+	[TYPE_Status],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Types]
+GO
+/****** Object:  StoredProcedure [dbo].[Types_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Types_Update]
+(
+	@TYPE_CodTable varchar(3),
+	@TYPE_CodType varchar(3),
+	@TYPE_Desc1 varchar(100),
+	@TYPE_Desc2 varchar(100),
+	@TYPE_Num1 int,
+	@TYPE_Num2 int,
+	@TYPE_Status char(1),
+	@AUDI_UserModi varchar(20),
+	@AUDI_FechModi datetime
+)
+
+AS
+
+
+UPDATE [Types]
+SET [TYPE_Desc1] = @TYPE_Desc1,
+	[TYPE_Desc2] = @TYPE_Desc2,
+	[TYPE_Num1] = @TYPE_Num1,
+	[TYPE_Num2] = @TYPE_Num2,
+	[TYPE_Status] = @TYPE_Status,
+	[AUDI_UserModi] = @AUDI_UserModi,
+	[AUDI_FechModi] = @AUDI_FechModi
+WHERE [TYPE_CodTable] = @TYPE_CodTable	AND [TYPE_CodType] = @TYPE_CodType
+GO

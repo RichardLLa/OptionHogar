@@ -1,0 +1,46 @@
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\appsettings.json
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\OptionHogar.WebService.deps.json
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\OptionHogar.WebService.runtimeconfig.json
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\OptionHogar.WebService.runtimeconfig.dev.json
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\OptionHogar.WebService.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\OptionHogar.WebService.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\Infrastructure.Aspect.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\Infrastructure.DataAccess.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\Infrastructure.Entities.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\Infrastructure.DataAccess.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\Infrastructure.Entities.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\bin\Debug\netcoreapp2.1\Infrastructure.Aspect.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.csprojAssemblyReference.cache
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.RazorAssemblyInfo.cache
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.RazorAssemblyInfo.cs
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.AssemblyInfoInputs.cache
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.AssemblyInfo.cs
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.RazorTargetAssemblyInfo.cache
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.csproj.CopyComplete
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\OptionHogar.Service\obj\Debug\netcoreapp2.1\OptionHogar.WebService.pdb
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\appsettings.json
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\OptionHogar.WebService.deps.json
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\OptionHogar.WebService.runtimeconfig.json
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\OptionHogar.WebService.runtimeconfig.dev.json
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\OptionHogar.WebService.dll
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\OptionHogar.WebService.pdb
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\Infrastructure.Aspect.dll
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\Infrastructure.DataAccess.dll
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\Infrastructure.Entities.dll
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\Infrastructure.DataAccess.pdb
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\Infrastructure.Entities.pdb
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\bin\Debug\netcoreapp2.1\Infrastructure.Aspect.pdb
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.csprojAssemblyReference.cache
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.RazorAssemblyInfo.cache
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.RazorAssemblyInfo.cs
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.AssemblyInfoInputs.cache
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.AssemblyInfo.cs
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.RazorTargetAssemblyInfo.cache
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.csproj.CopyComplete
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.dll
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.WebService\obj\Debug\netcoreapp2.1\OptionHogar.WebService.pdb

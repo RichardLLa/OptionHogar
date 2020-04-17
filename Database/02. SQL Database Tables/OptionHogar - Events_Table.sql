@@ -1,0 +1,27 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Events](
+	[EVEN_ID] [int] IDENTITY(1,1) NOT NULL,
+	[PROJ_ID] [int] NOT NULL,
+	[EVEN_StartDate] [date] NOT NULL,
+	[EVEN_EndingDate] [date] NOT NULL,
+	[EVEN_State] [char](1) NOT NULL,
+	[EVEN_Title] [varchar](20) NOT NULL,
+	[EVEN_Description] [varchar](200) NOT NULL,
+	[AUDI_UserCrea] [varchar](20) NOT NULL,
+	[AUDI_FechCrea] [datetime] NOT NULL,
+	[AUDI_UserModi] [varchar](20) NULL,
+	[AUDI_FechModi] [datetime] NULL,
+ CONSTRAINT [Events_PK] PRIMARY KEY CLUSTERED 
+(
+	[EVEN_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Events]  WITH CHECK ADD  CONSTRAINT [Events_Projects_FK] FOREIGN KEY([PROJ_ID])
+REFERENCES [dbo].[Projects] ([PROJ_ID])
+GO
+ALTER TABLE [dbo].[Events] CHECK CONSTRAINT [Events_Projects_FK]
+GO

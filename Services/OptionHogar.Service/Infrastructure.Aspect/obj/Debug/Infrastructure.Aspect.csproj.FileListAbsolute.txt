@@ -1,0 +1,26 @@
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.csproj.CoreCompileInputs.cache
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.csprojAssemblyReference.cache
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.csproj.CoreCompileInputs.cache
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.pdb
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.dll
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.pdb
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.csprojAssemblyReference.cache
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.dll
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.csprojAssemblyReference.cache
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.dll
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\Infrastructure.Aspect\bin\Debug\Infrastructure.Aspect.pdb
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.csprojAssemblyReference.cache
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.dll
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\Infrastructure.Aspect\obj\Debug\Infrastructure.Aspect.pdb

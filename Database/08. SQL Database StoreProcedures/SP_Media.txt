@@ -1,0 +1,257 @@
+
+/****** Object:  StoredProcedure [dbo].[Media_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Media_Delete]
+(
+	@MEDI_ID int
+)
+
+AS
+
+
+DELETE FROM [Media]
+WHERE [MEDI_ID] = @MEDI_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Media_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Media_Insert]
+(
+	@PROJ_ID int,
+	@EVEN_ID int,
+	@MEDI_Event bit,
+	@MEDI_Title varchar(50),
+	@MEDI_Description varchar(250),
+	@MEDI_Url varchar(1),
+	@TYPE_TabMED varchar(3),
+	@TYPE_CodMED varchar(3),
+	@AUDI_UserCrea varchar(20),
+	@AUDI_FechCrea datetime
+)
+
+AS
+
+
+INSERT INTO [Media]
+(
+	[PROJ_ID],
+	[EVEN_ID],
+	[MEDI_Event],
+	[MEDI_Title],
+	[MEDI_Description],
+	[MEDI_Url],
+	[TYPE_TabMED],
+	[TYPE_CodMED],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea]
+)
+VALUES
+(
+	@PROJ_ID,
+	@EVEN_ID,
+	@MEDI_Event,
+	@MEDI_Title,
+	@MEDI_Description,
+	@MEDI_Url,
+	@TYPE_TabMED,
+	@TYPE_CodMED,
+	@AUDI_UserCrea,
+	@AUDI_FechCrea
+)
+GO
+/****** Object:  StoredProcedure [dbo].[Media_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Media_Select]
+(
+	@MEDI_ID int
+)
+
+AS
+
+
+SELECT [MEDI_ID],
+	[PROJ_ID],
+	[EVEN_ID],
+	[MEDI_Event],
+	[MEDI_Title],
+	[MEDI_Description],
+	[MEDI_Url],
+	[TYPE_TabMED],
+	[TYPE_CodMED],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Media]
+WHERE [MEDI_ID] = @MEDI_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Media_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Media_SelectAll]
+
+AS
+
+
+SELECT [MEDI_ID],
+	[PROJ_ID],
+	[EVEN_ID],
+	[MEDI_Event],
+	[MEDI_Title],
+	[MEDI_Description],
+	[MEDI_Url],
+	[TYPE_TabMED],
+	[TYPE_CodMED],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Media]
+GO
+/****** Object:  StoredProcedure [dbo].[Media_SelectAllByEVEN_ID]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Media_SelectAllByEVEN_ID]
+(
+	@EVEN_ID int
+)
+
+AS
+
+
+SELECT [MEDI_ID],
+	[PROJ_ID],
+	[EVEN_ID],
+	[MEDI_Event],
+	[MEDI_Title],
+	[MEDI_Description],
+	[MEDI_Url],
+	[TYPE_TabMED],
+	[TYPE_CodMED],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Media]
+WHERE [EVEN_ID] = @EVEN_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Media_SelectAllByPROJ_ID]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Media_SelectAllByPROJ_ID]
+(
+	@PROJ_ID int
+)
+
+AS
+
+
+SELECT [MEDI_ID],
+	[PROJ_ID],
+	[EVEN_ID],
+	[MEDI_Event],
+	[MEDI_Title],
+	[MEDI_Description],
+	[MEDI_Url],
+	[TYPE_TabMED],
+	[TYPE_CodMED],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Media]
+WHERE [PROJ_ID] = @PROJ_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Media_SelectAllByTypeMED]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Media_SelectAllByTypeMED]
+(
+	@TYPE_TabMED varchar(3),
+	@TYPE_CodMED varchar(3)
+)
+
+AS
+
+
+SELECT [MEDI_ID],
+	[PROJ_ID],
+	[EVEN_ID],
+	[MEDI_Event],
+	[MEDI_Title],
+	[MEDI_Description],
+	[MEDI_Url],
+	[TYPE_TabMED],
+	[TYPE_CodMED],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Media]
+WHERE [TYPE_TabMED] = @TYPE_TabMED
+	AND [TYPE_CodMED] = @TYPE_CodMED
+GO
+/****** Object:  StoredProcedure [dbo].[Media_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Media_Update]
+(
+	@MEDI_ID int,
+	@PROJ_ID int,
+	@EVEN_ID int,
+	@MEDI_Event bit,
+	@MEDI_Title varchar(50),
+	@MEDI_Description varchar(250),
+	@MEDI_Url varchar(1),
+	@TYPE_TabMED varchar(3),
+	@TYPE_CodMED varchar(3),
+	@AUDI_UserModi varchar(20),
+	@AUDI_FechModi datetime
+)
+
+AS
+
+
+UPDATE [Media]
+SET [PROJ_ID] = @PROJ_ID,
+	[EVEN_ID] = @EVEN_ID,
+	[MEDI_Event] = @MEDI_Event,
+	[MEDI_Title] = @MEDI_Title,
+	[MEDI_Description] = @MEDI_Description,
+	[MEDI_Url] = @MEDI_Url,
+	[TYPE_TabMED] = @TYPE_TabMED,
+	[TYPE_CodMED] = @TYPE_CodMED,
+	[AUDI_UserModi] = @AUDI_UserModi,
+	[AUDI_FechModi] = @AUDI_FechModi
+WHERE [MEDI_ID] = @MEDI_ID
+GO

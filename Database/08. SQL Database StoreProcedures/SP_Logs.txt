@@ -1,0 +1,125 @@
+
+/****** Object:  StoredProcedure [dbo].[Logs_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Logs_Delete]
+(
+	@LOG_ID int
+)
+
+AS
+
+
+DELETE FROM [Logs]
+WHERE [LOG_ID] = @LOG_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Logs_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE 
+ PROCEDURE [dbo].[Logs_Insert]
+(
+	@LOG_Date date,
+	@TYPE_TabAUD varchar(3),
+	@TYPE_CodAUD varchar(3),
+	@LOG_Object varchar(25),
+	@LOG_Text text
+)
+
+AS
+
+
+INSERT INTO [Logs]
+(
+	[LOG_Date],
+	[TYPE_TabAUD],
+	[TYPE_CodAUD],
+	[LOG_Object],
+	[LOG_Text]
+)
+VALUES
+(
+	@LOG_Date,
+	@TYPE_TabAUD,
+	@TYPE_CodAUD,
+	@LOG_Object,
+	@LOG_Text
+)
+GO
+/****** Object:  StoredProcedure [dbo].[Logs_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Logs_Select]
+(
+	@LOG_ID int
+)
+
+AS
+
+
+SELECT [LOG_ID],
+	[LOG_Date],
+	[TYPE_TabAUD],
+	[TYPE_CodAUD],
+	[LOG_Object],
+	[LOG_Text]
+FROM [Logs]
+WHERE [LOG_ID] = @LOG_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Logs_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Logs_SelectAll]
+
+AS
+
+
+SELECT [LOG_ID],
+	[LOG_Date],
+	[TYPE_TabAUD],
+	[TYPE_CodAUD],
+	[LOG_Object],
+	[LOG_Text]
+FROM [Logs]
+GO
+/****** Object:  StoredProcedure [dbo].[Logs_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Logs_Update]
+(
+	@LOG_ID int,
+	@LOG_Date date,
+	@TYPE_TabAUD varchar(3),
+	@TYPE_CodAUD varchar(3),
+	@LOG_Object varchar(25),
+	@LOG_Text text
+)
+
+AS
+
+
+UPDATE [Logs]
+SET [LOG_Date] = @LOG_Date,
+	[TYPE_TabAUD] = @TYPE_TabAUD,
+	[TYPE_CodAUD] = @TYPE_CodAUD,
+	[LOG_Object] = @LOG_Object,
+	[LOG_Text] = @LOG_Text
+WHERE [LOG_ID] = @LOG_ID
+GO

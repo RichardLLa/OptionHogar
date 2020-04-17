@@ -1,0 +1,38 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Media](
+	[MEDI_ID] [int] IDENTITY(1,1) NOT NULL,
+	[PROJ_ID] [int] NULL,
+	[EVEN_ID] [int] NULL,
+	[MEDI_Event] [bit] NOT NULL,
+	[MEDI_Title] [varchar](50) NOT NULL,
+	[MEDI_Description] [varchar](250) NOT NULL,
+	[MEDI_Url] [varchar](100) NOT NULL,
+	[TYPE_TabMED] [varchar](3) NOT NULL,
+	[TYPE_CodMED] [varchar](3) NOT NULL,
+	[AUDI_UserCrea] [varchar](20) NOT NULL,
+	[AUDI_FechCrea] [datetime] NOT NULL,
+	[AUDI_UserModi] [varchar](20) NULL,
+	[AUDI_FechModi] [datetime] NULL,
+ CONSTRAINT [Media_PK] PRIMARY KEY CLUSTERED 
+(
+	[MEDI_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Media]  WITH CHECK ADD  CONSTRAINT [Media_Events_FK] FOREIGN KEY([EVEN_ID])
+REFERENCES [dbo].[Events] ([EVEN_ID])
+GO
+ALTER TABLE [dbo].[Media] CHECK CONSTRAINT [Media_Events_FK]
+GO
+ALTER TABLE [dbo].[Media]  WITH CHECK ADD  CONSTRAINT [Media_Projects_FK] FOREIGN KEY([PROJ_ID])
+REFERENCES [dbo].[Projects] ([PROJ_ID])
+GO
+ALTER TABLE [dbo].[Media] CHECK CONSTRAINT [Media_Projects_FK]
+GO
+ALTER TABLE [dbo].[Media]  WITH CHECK ADD  CONSTRAINT [Media_Types_FK] FOREIGN KEY([TYPE_TabMED], [TYPE_CodMED])
+REFERENCES [dbo].[Types] ([TYPE_CodTable], [TYPE_CodType])
+GO
+ALTER TABLE [dbo].[Media] CHECK CONSTRAINT [Media_Types_FK]

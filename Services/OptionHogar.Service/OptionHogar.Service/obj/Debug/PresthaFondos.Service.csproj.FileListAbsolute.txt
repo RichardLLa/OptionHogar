@@ -1,0 +1,60 @@
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll.config
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csprojAssemblyReference.cache
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csproj.CoreCompileInputs.cache
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\Business.Logic.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\Business.Logic.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.2a\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csproj.CopyComplete
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll.config
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Business.Logic.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Business.Logic.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.pdb
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csprojAssemblyReference.cache
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csproj.CoreCompileInputs.cache
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csproj.CopyComplete
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.dll
+C:\Users\Jean\Desktop\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.pdb
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll.config
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.pdb
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Business.Logic.dll
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.dll
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.dll
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.dll
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Business.Logic.pdb
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.pdb
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.pdb
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.pdb
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csprojAssemblyReference.cache
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csproj.CopyComplete
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.dll
+C:\Users\Richard\Documents\PRESTHA FONDOS v0.13 - a\PRESTHA FONDOS v0.13 - a\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csprojAssemblyReference.cache
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll.config
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.csproj.CopyComplete

@@ -1,0 +1,39 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persons](
+	[PERS_ID] [int] IDENTITY(1,1) NOT NULL,
+	[PERS_Names] [varchar](25) NOT NULL,
+	[PERS_LastName] [varchar](25) NOT NULL,
+	[PERS_MotherLastName] [varchar](25) NOT NULL,
+	[PERS_BirthDate] [date] NOT NULL,
+	[TYPE_TabGEN] [varchar](3) NOT NULL,
+	[TYPE_CodGEN] [varchar](3) NOT NULL,
+	[TYPE_TabDOC] [varchar](3) NOT NULL,
+	[TYPE_CodDOC] [varchar](3) NOT NULL,
+	[AUDI_UserCrea] [varchar](20) NOT NULL,
+	[AUDI_FechCrea] [datetime] NOT NULL,
+	[AUDI_UserModi] [varchar](20) NULL,
+	[AUDI_FechModi] [datetime] NULL,
+ CONSTRAINT [Persons_PK] PRIMARY KEY CLUSTERED 
+(
+	[PERS_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UK_FullName] UNIQUE NONCLUSTERED 
+(
+	[PERS_Names] ASC,
+	[PERS_LastName] ASC,
+	[PERS_MotherLastName] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Persons]  WITH CHECK ADD  CONSTRAINT [Persons_TypesDOC_FK] FOREIGN KEY([TYPE_TabDOC], [TYPE_CodDOC])
+REFERENCES [dbo].[Types] ([TYPE_CodTable], [TYPE_CodType])
+GO
+ALTER TABLE [dbo].[Persons] CHECK CONSTRAINT [Persons_TypesDOC_FK]
+GO
+ALTER TABLE [dbo].[Persons]  WITH CHECK ADD  CONSTRAINT [Persons_TypesGEN_FK] FOREIGN KEY([TYPE_TabGEN], [TYPE_CodGEN])
+REFERENCES [dbo].[Types] ([TYPE_CodTable], [TYPE_CodType])
+GO
+ALTER TABLE [dbo].[Persons] CHECK CONSTRAINT [Persons_TypesGEN_FK]

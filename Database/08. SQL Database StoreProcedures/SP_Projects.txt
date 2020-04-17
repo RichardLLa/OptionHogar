@@ -1,0 +1,219 @@
+
+/****** Object:  StoredProcedure [dbo].[Projects_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Projects_Delete]
+(
+	@PROJ_ID int
+)
+
+AS
+
+
+DELETE FROM [Projects]
+WHERE [PROJ_ID] = @PROJ_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Projects_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Projects_Insert]
+(
+	@INVE_ID int,
+	@PROJ_Name varchar(50),
+	@PROJ_OverallProfitability int,
+	@PROJ_ExecutionTime int,
+	@PROJ_InvestmentCapital numeric(10, 4),
+	@PROJ_Modality varchar(50),
+	@PROJ_PromotionDate date,
+	@PROJ_ExpirationDate date,
+	@PROJ_Progress int,
+	@PROJ_Description varchar(200),
+	@PROJ_State char(1),
+	@AUDI_UserCrea varchar(20),
+	@AUDI_FechCrea datetime
+)
+
+AS
+
+
+INSERT INTO [Projects]
+(
+	[INVE_ID],
+	[PROJ_Name],
+	[PROJ_OverallProfitability],
+	[PROJ_ExecutionTime],
+	[PROJ_InvestmentCapital],
+	[PROJ_Modality],
+	[PROJ_PromotionDate],
+	[PROJ_ExpirationDate],
+	[PROJ_Progress],
+	[PROJ_Description],
+	[PROJ_State],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea]
+)
+VALUES
+(
+	@INVE_ID,
+	@PROJ_Name,
+	@PROJ_OverallProfitability,
+	@PROJ_ExecutionTime,
+	@PROJ_InvestmentCapital,
+	@PROJ_Modality,
+	@PROJ_PromotionDate,
+	@PROJ_ExpirationDate,
+	@PROJ_Progress,
+	@PROJ_Description,
+	@PROJ_State,
+	@AUDI_UserCrea,
+	@AUDI_FechCrea
+)
+GO
+/****** Object:  StoredProcedure [dbo].[Projects_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Projects_Select]
+(
+	@PROJ_ID int
+)
+
+AS
+
+
+SELECT [PROJ_ID],
+	[INVE_ID],
+	[PROJ_Name],
+	[PROJ_OverallProfitability],
+	[PROJ_ExecutionTime],
+	[PROJ_InvestmentCapital],
+	[PROJ_Modality],
+	[PROJ_PromotionDate],
+	[PROJ_ExpirationDate],
+	[PROJ_Progress],
+	[PROJ_Description],
+	[PROJ_State],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Projects]
+WHERE [PROJ_ID] = @PROJ_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Projects_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE PROCEDURE [dbo].[Projects_SelectAll]
+
+AS
+
+
+SELECT [PROJ_ID],
+	[INVE_ID],
+	[PROJ_Name],
+	[PROJ_OverallProfitability],
+	[PROJ_ExecutionTime],
+	[PROJ_InvestmentCapital],
+	[PROJ_Modality],
+	[PROJ_PromotionDate],
+	[PROJ_ExpirationDate],
+	[PROJ_Progress],
+	[PROJ_Description],
+	[PROJ_State],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Projects]
+GO
+/****** Object:  StoredProcedure [dbo].[Projects_SelectAllByINVE_ID]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Projects_SelectAllByINVE_ID]
+(
+	@INVE_ID int
+)
+
+AS
+
+
+SELECT [PROJ_ID],
+	[INVE_ID],
+	[PROJ_Name],
+	[PROJ_OverallProfitability],
+	[PROJ_ExecutionTime],
+	[PROJ_InvestmentCapital],
+	[PROJ_Modality],
+	[PROJ_PromotionDate],
+	[PROJ_ExpirationDate],
+	[PROJ_Progress],
+	[PROJ_Description],
+	[PROJ_State],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Projects]
+WHERE [INVE_ID] = @INVE_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Projects_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Projects_Update]
+(
+	@PROJ_ID int,
+	@INVE_ID int,
+	@PROJ_Name varchar(50),
+	@PROJ_OverallProfitability int,
+	@PROJ_ExecutionTime int,
+	@PROJ_InvestmentCapital numeric(10, 4),
+	@PROJ_Modality varchar(50),
+	@PROJ_PromotionDate date,
+	@PROJ_ExpirationDate date,
+	@PROJ_Progress int,
+	@PROJ_Description varchar(200),
+	@PROJ_State char(1),
+	@AUDI_UserModi varchar(20),
+	@AUDI_FechModi datetime
+)
+
+AS
+
+
+UPDATE [Projects]
+SET [INVE_ID] = @INVE_ID,
+	[PROJ_Name] = @PROJ_Name,
+	[PROJ_OverallProfitability] = @PROJ_OverallProfitability,
+	[PROJ_ExecutionTime] = @PROJ_ExecutionTime,
+	[PROJ_InvestmentCapital] = @PROJ_InvestmentCapital,
+	[PROJ_Modality] = @PROJ_Modality,
+	[PROJ_PromotionDate] = @PROJ_PromotionDate,
+	[PROJ_ExpirationDate] = @PROJ_ExpirationDate,
+	[PROJ_Progress] = @PROJ_Progress,
+	[PROJ_Description] = @PROJ_Description,
+	[PROJ_State] = @PROJ_State,
+	[AUDI_UserModi] = @AUDI_UserModi,
+	[AUDI_FechModi] = @AUDI_FechModi
+WHERE [PROJ_ID] = @PROJ_ID
+GO

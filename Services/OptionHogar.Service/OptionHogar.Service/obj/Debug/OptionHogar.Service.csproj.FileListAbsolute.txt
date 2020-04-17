@@ -1,0 +1,14 @@
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll.config
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\PresthaFondos.Service.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Aspect.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.DataAccess.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\bin\Infrastructure.Entities.pdb
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\OptionHogar.Service.csprojAssemblyReference.cache
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\OptionHogar.Service.csproj.CopyComplete
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.dll
+E:\Proyectos\jean carlos\PRESTHA FONDOS security v1\Services\PresthaFondos.Service\PresthaFondos.Service\obj\Debug\PresthaFondos.Service.pdb
+E:\Proyectos\jean carlos\OPTION HOGAR\Services\OptionHogar.Service\OptionHogar.Service\obj\Debug\OptionHogar.Service.csprojAssemblyReference.cache

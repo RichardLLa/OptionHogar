@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\OptionHogar.WebService\\OptionHogar.WebService.csproj": {}
+  },
+  "projects": {
+    "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Aspect\\Infrastructure.Aspect.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Aspect\\Infrastructure.Aspect.csproj",
+        "projectName": "Infrastructure.Aspect",
+        "projectPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Aspect\\Infrastructure.Aspect.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.DataAccess\\Infrastructure.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.DataAccess\\Infrastructure.DataAccess.csproj",
+        "projectName": "Infrastructure.DataAccess",
+        "projectPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.DataAccess\\Infrastructure.DataAccess.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Aspect\\Infrastructure.Aspect.csproj": {
+                "projectPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Aspect\\Infrastructure.Aspect.csproj"
+              },
+              "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Entities\\Infrastructure.Entities.csproj": {
+                "projectPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Entities\\Infrastructure.Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Entities\\Infrastructure.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Entities\\Infrastructure.Entities.csproj",
+        "projectName": "Infrastructure.Entities",
+        "projectPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Entities\\Infrastructure.Entities.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\OptionHogar.WebService\\OptionHogar.WebService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\OptionHogar.WebService\\OptionHogar.WebService.csproj",
+        "projectName": "OptionHogar.WebService",
+        "projectPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\OptionHogar.WebService\\OptionHogar.WebService.csproj",
+        "packagesPath": "C:\\Users\\Richard\\.nuget\\packages\\",
+        "outputPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\OptionHogar.WebService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Richard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.DataAccess\\Infrastructure.DataAccess.csproj": {
+                "projectPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.DataAccess\\Infrastructure.DataAccess.csproj"
+              },
+              "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Entities\\Infrastructure.Entities.csproj": {
+                "projectPath": "E:\\Proyectos\\jean carlos\\OPTION HOGAR\\Services\\OptionHogar.Service\\Infrastructure.Entities\\Infrastructure.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

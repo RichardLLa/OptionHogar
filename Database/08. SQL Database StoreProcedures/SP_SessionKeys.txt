@@ -1,0 +1,145 @@
+
+/****** Object:  StoredProcedure [dbo].[SessionKeys_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[SessionKeys_Delete]
+(
+	@SESS_ID int,
+	@SESS_Date date
+)
+
+AS
+
+
+DELETE FROM [SessionKeys]
+WHERE [SESS_ID] = @SESS_ID
+	AND [SESS_Date] = @SESS_Date
+GO
+/****** Object:  StoredProcedure [dbo].[SessionKeys_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[SessionKeys_Insert]
+(
+@SESS_ID int,
+	@SESS_Date date,
+	@SESS_PrivateKeyXML varchar(100),
+	@SESS_PublicKeyXML varchar (100),
+	@SESS_PrivateKeyPEM varchar(100),
+	@SESS_PublicKeyPEM varchar (100),
+	@AUDI_UserCrea varchar(20),
+	@AUDI_FechCrea datetime
+)
+
+AS
+
+
+INSERT INTO [SessionKeys]
+(
+SESS_ID,
+	[SESS_Date],
+	[SESS_PrivateKeyXML],
+	[SESS_PublicKeyXML],
+	[SESS_PrivateKeyPEM],
+	[SESS_PublicKeyPEM],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea]
+)
+VALUES
+(
+@SESS_ID,
+	@SESS_Date,
+	@SESS_PrivateKeyXML,
+	@SESS_PublicKeyXML,
+	@SESS_PrivateKeyPEM,
+	@SESS_PublicKeyPEM,
+	@AUDI_UserCrea,
+	@AUDI_FechCrea
+)
+GO
+/****** Object:  StoredProcedure [dbo].[SessionKeys_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[SessionKeys_Select]
+(
+	@SESS_ID int,
+	@SESS_Date date
+)
+
+AS
+
+
+SELECT [SESS_ID],
+	[SESS_Date],
+	[SESS_PrivateKeyXML],
+	[SESS_PublicKeyXML],
+	[SESS_PrivateKeyPEM],
+	[SESS_PublicKeyPEM],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [SessionKeys]
+WHERE [SESS_ID] = @SESS_ID
+	AND [SESS_Date] = @SESS_Date
+GO
+/****** Object:  StoredProcedure [dbo].[SessionKeys_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[SessionKeys_SelectAll]
+
+AS
+
+
+SELECT [SESS_ID],
+	[SESS_Date],
+	[SESS_PrivateKeyXML],
+	[SESS_PublicKeyXML],
+	[SESS_PrivateKeyPEM],
+	[SESS_PublicKeyPEM],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [SessionKeys]
+GO
+/****** Object:  StoredProcedure [dbo].[SessionKeys_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[SessionKeys_Update]
+(
+	@SESS_ID int,
+	@SESS_Date date,
+	@SESS_PrivateKeyXML varchar(100),
+	@SESS_PublicKeyXML varchar (100),
+	@SESS_PrivateKeyPEM varchar(100),
+	@SESS_PublicKeyPEM varchar (100),
+	@AUDI_UserCrea varchar(20),
+	@AUDI_FechCrea datetime
+)
+
+AS
+
+
+UPDATE [SessionKeys]
+SET [SESS_PrivateKeyXML] = @SESS_PrivateKeyXML,
+	[SESS_PublicKeyXML] = @SESS_PublicKeyXML,
+	[SESS_PrivateKeyPEM] = @SESS_PrivateKeyPEM,
+	[SESS_PublicKeyPEM] = @SESS_PublicKeyPEM,
+	[AUDI_UserCrea] = @AUDI_UserCrea,
+	[AUDI_FechCrea] = @AUDI_FechCrea
+WHERE [SESS_ID] = @SESS_ID	AND [SESS_Date] = @SESS_Date
+GO

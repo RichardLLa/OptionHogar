@@ -1,0 +1,170 @@
+
+CREATE PROCEDURE [dbo].[Investments_Delete]
+(
+	@INVE_ID int
+)
+
+AS
+
+
+DELETE FROM [Investments]
+WHERE [INVE_ID] = @INVE_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Investments_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Investments_Insert]
+(
+	@USER_ID int,
+	@INVE_Amount numeric(10, 4),
+	@INVE_Date date,
+	@INVE_Observation varchar(200),
+	@INVE_CostEffectiveness int,
+	@INVE_State char(1),
+	@AUDI_UserCrea varchar(20),
+	@AUDI_FechCrea datetime
+)
+
+AS
+
+
+INSERT INTO [Investments]
+(
+	[USER_ID],
+	[INVE_Amount],
+	[INVE_Date],
+	[INVE_Observation],
+	[INVE_CostEffectiveness],
+	[INVE_State],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea]
+)
+VALUES
+(
+	@USER_ID,
+	@INVE_Amount,
+	@INVE_Date,
+	@INVE_Observation,
+	@INVE_CostEffectiveness,
+	@INVE_State,
+	@AUDI_UserCrea,
+	@AUDI_FechCrea
+)
+GO
+/****** Object:  StoredProcedure [dbo].[Investments_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Investments_Select]
+(
+	@INVE_ID int
+)
+
+AS
+
+
+SELECT [INVE_ID],
+	[USER_ID],
+	[INVE_Amount],
+	[INVE_Date],
+	[INVE_Observation],
+	[INVE_CostEffectiveness],
+	[INVE_State],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Investments]
+WHERE [INVE_ID] = @INVE_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Investments_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Investments_SelectAll]
+
+AS
+
+
+SELECT [INVE_ID],
+	[USER_ID],
+	[INVE_Amount],
+	[INVE_Date],
+	[INVE_Observation],
+	[INVE_CostEffectiveness],
+	[INVE_State],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Investments]
+GO
+/****** Object:  StoredProcedure [dbo].[Investments_SelectByUSER_ID]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Investments_SelectByUSER_ID]
+(
+	@USER_ID int
+)
+
+AS
+
+
+SELECT [INVE_ID],
+	[USER_ID],
+	[INVE_Amount],
+	[INVE_Date],
+	[INVE_Observation],
+	[INVE_CostEffectiveness],
+	[INVE_State],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Investments]
+WHERE [USER_ID] = @USER_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Investments_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Investments_Update]
+(
+	@INVE_ID int,
+	@USER_ID int,
+	@INVE_Amount numeric(10, 4),
+	@INVE_Date date,
+	@INVE_Observation varchar(200),
+	@INVE_CostEffectiveness int,
+	@INVE_State char(1),
+	@AUDI_UserModi varchar(20),
+	@AUDI_FechModi datetime
+)
+
+AS
+
+
+UPDATE [Investments]
+SET [USER_ID] = @USER_ID,
+	[INVE_Amount] = @INVE_Amount,
+	[INVE_Date] = @INVE_Date,
+	[INVE_Observation] = @INVE_Observation,
+	[INVE_CostEffectiveness] = @INVE_CostEffectiveness,
+	[INVE_State] = @INVE_State,
+	[AUDI_UserModi] = @AUDI_UserModi,
+	[AUDI_FechModi] = @AUDI_FechModi
+WHERE [INVE_ID] = @INVE_ID
+GO

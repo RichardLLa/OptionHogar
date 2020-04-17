@@ -1,0 +1,230 @@
+
+/****** Object:  StoredProcedure [dbo].[Persons_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Persons_Delete]
+(
+	@PERS_ID int
+)
+
+AS
+
+
+DELETE FROM [Persons]
+WHERE [PERS_ID] = @PERS_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Persons_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE  PROCEDURE [dbo].[Persons_Insert]
+(
+	@PERS_Names varchar(25),
+	@PERS_LastName varchar(25),
+	@PERS_MotherLastName varchar(25),
+	@PERS_BirthDate date,
+	@TYPE_TabGEN varchar(3),
+	@TYPE_CodGEN varchar(3),
+	@TYPE_TabDOC varchar(3),
+	@TYPE_CodDOC varchar(3),
+	@AUDI_UserCrea varchar(20),
+	@AUDI_FechCrea datetime
+)
+
+AS
+
+
+INSERT INTO [Persons]
+(
+	[PERS_Names],
+	[PERS_LastName],
+	[PERS_MotherLastName],
+	[PERS_BirthDate],
+	[TYPE_TabGEN],
+	[TYPE_CodGEN],
+	[TYPE_TabDOC],
+	[TYPE_CodDOC],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea]
+)
+VALUES
+(
+	@PERS_Names,
+	@PERS_LastName,
+	@PERS_MotherLastName,
+	@PERS_BirthDate,
+	@TYPE_TabGEN,
+	@TYPE_CodGEN,
+	@TYPE_TabDOC,
+	@TYPE_CodDOC,
+	@AUDI_UserCrea,
+	@AUDI_FechCrea
+)
+GO
+/****** Object:  StoredProcedure [dbo].[Persons_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Persons_Select]
+(
+	@PERS_ID int
+)
+
+AS
+
+
+SELECT [PERS_ID],
+	[PERS_Names],
+	[PERS_LastName],
+	[PERS_MotherLastName],
+	[PERS_BirthDate],
+	[TYPE_TabGEN],
+	[TYPE_CodGEN],
+	[TYPE_TabDOC],
+	[TYPE_CodDOC],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Persons]
+WHERE [PERS_ID] = @PERS_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Persons_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Persons_SelectAll]
+
+AS
+
+
+SELECT [PERS_ID],
+	[PERS_Names],
+	[PERS_LastName],
+	[PERS_MotherLastName],
+	[PERS_BirthDate],
+	[TYPE_TabGEN],
+	[TYPE_CodGEN],
+	[TYPE_TabDOC],
+	[TYPE_CodDOC],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Persons]
+GO
+/****** Object:  StoredProcedure [dbo].[Persons_SelectAllByTypeDOC]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Persons_SelectAllByTypeDOC]
+(
+	@TYPE_TabDOC varchar(3),
+	@TYPE_CodDOC varchar(3)
+)
+
+AS
+
+
+SELECT [PERS_ID],
+	[PERS_Names],
+	[PERS_LastName],
+	[PERS_MotherLastName],
+	[PERS_BirthDate],
+	[TYPE_TabGEN],
+	[TYPE_CodGEN],
+	[TYPE_TabDOC],
+	[TYPE_CodDOC],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Persons]
+WHERE [TYPE_TabDOC] = @TYPE_TabDOC
+	AND [TYPE_CodDOC] = @TYPE_CodDOC
+GO
+/****** Object:  StoredProcedure [dbo].[Persons_SelectAllByTypeGEN]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+CREATE PROCEDURE [dbo].[Persons_SelectAllByTypeGEN]
+(
+	@TYPE_TabGEN varchar(3),
+	@TYPE_CodGEN varchar(3)
+)
+
+AS
+
+
+SELECT [PERS_ID],
+	[PERS_Names],
+	[PERS_LastName],
+	[PERS_MotherLastName],
+	[PERS_BirthDate],
+	[TYPE_TabGEN],
+	[TYPE_CodGEN],
+	[TYPE_TabDOC],
+	[TYPE_CodDOC],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Persons]
+WHERE [TYPE_TabGEN] = @TYPE_TabGEN
+	AND [TYPE_CodGEN] = @TYPE_CodGEN
+GO
+/****** Object:  StoredProcedure [dbo].[Persons_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Persons_Update]
+(
+	@PERS_ID int,
+	@PERS_Names varchar(25),
+	@PERS_LastName varchar(25),
+	@PERS_MotherLastName varchar(25),
+	@PERS_BirthDate date,
+	@TYPE_TabGEN varchar(3),
+	@TYPE_CodGEN varchar(3),
+	@TYPE_TabDOC varchar(3),
+	@TYPE_CodDOC varchar(3),
+	@AUDI_UserModi varchar(20),
+	@AUDI_FechModi datetime
+)
+
+AS
+
+
+UPDATE [Persons]
+SET [PERS_Names] = @PERS_Names,
+	[PERS_LastName] = @PERS_LastName,
+	[PERS_MotherLastName] = @PERS_MotherLastName,
+	[PERS_BirthDate] = @PERS_BirthDate,
+	[TYPE_TabGEN] = @TYPE_TabGEN,
+	[TYPE_CodGEN] = @TYPE_CodGEN,
+	[TYPE_TabDOC] = @TYPE_TabDOC,
+	[TYPE_CodDOC] = @TYPE_CodDOC,
+	[AUDI_UserModi] = @AUDI_UserModi,
+	[AUDI_FechModi] = @AUDI_FechModi
+WHERE [PERS_ID] = @PERS_ID
+GO

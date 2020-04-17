@@ -1,0 +1,165 @@
+/****** Object:  StoredProcedure [dbo].[Events_Insert]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Events_Insert]  
+(  
+ @PROJ_ID int,  
+ @EVEN_StartDate date,  
+ @EVEN_EndingDate date,  
+ @EVEN_State char(1),  
+ @EVEN_Title varchar(20),  
+ @EVEN_Description varchar(200),  
+ @AUDI_UserCrea varchar(20),  
+ @AUDI_FechCrea datetime  
+)  
+  
+AS  
+  
+  
+INSERT INTO [Events]  
+(  
+ [PROJ_ID],  
+ [EVEN_StartDate],  
+ [EVEN_EndingDate],  
+ [EVEN_State],  
+ [EVEN_Title],  
+ [EVEN_Description],  
+ [AUDI_UserCrea],  
+ [AUDI_FechCrea]  
+)  
+VALUES  
+(  
+ @PROJ_ID,  
+ @EVEN_StartDate,  
+ @EVEN_EndingDate,  
+ @EVEN_State,  
+ @EVEN_Title,  
+ @EVEN_Description,  
+ @AUDI_UserCrea,  
+ @AUDI_FechCrea  
+)  
+  
+GO
+/****** Object:  StoredProcedure [dbo].[Events_Select]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Events_Select]
+(
+	@EVEN_ID int
+)
+
+AS
+
+
+SELECT [EVEN_ID],
+	[PROJ_ID],
+	[EVEN_StartDate],
+	[EVEN_EndingDate],
+	[EVEN_State],
+	[EVEN_Title],
+	[EVEN_Description],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Events]
+WHERE [EVEN_ID] = @EVEN_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Events_SelectAll]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Events_SelectAll]
+
+AS
+
+
+SELECT [EVEN_ID],
+	[PROJ_ID],
+	[EVEN_StartDate],
+	[EVEN_EndingDate],
+	[EVEN_State],
+	[EVEN_Title],
+	[EVEN_Description],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Events]
+GO
+/****** Object:  StoredProcedure [dbo].[Events_SelectProj_id]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE  PROCEDURE [dbo].[Events_SelectProj_id]
+(
+	@PROJ_ID int
+)
+
+AS
+
+
+SELECT [EVEN_ID],
+	[PROJ_ID],
+	[EVEN_StartDate],
+	[EVEN_EndingDate],
+	[EVEN_State],
+	[EVEN_Title],
+	[EVEN_Description],
+	[AUDI_UserCrea],
+	[AUDI_FechCrea],
+	[AUDI_UserModi],
+	[AUDI_FechModi]
+FROM [Events]
+WHERE [PROJ_ID] = @PROJ_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Events_Update]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[Events_Update]
+(
+	@EVEN_ID int,
+	@PROJ_ID int,
+	@EVEN_StartDate date,
+	@EVEN_EndingDate date,
+	@EVEN_State char(1),
+	@EVEN_Title varchar(20),
+	@EVEN_Description varchar(200),
+	@AUDI_UserModi varchar(20),
+	@AUDI_FechModi datetime
+)
+
+AS
+
+
+UPDATE [Events]
+SET [PROJ_ID] = @PROJ_ID,
+	[EVEN_StartDate] = @EVEN_StartDate,
+	[EVEN_EndingDate] = @EVEN_EndingDate,
+	[EVEN_State] = @EVEN_State,
+	[EVEN_Title] = @EVEN_Title,
+	[EVEN_Description] = @EVEN_Description,
+	[AUDI_UserModi] = @AUDI_UserModi,
+	[AUDI_FechModi] = @AUDI_FechModi
+WHERE [EVEN_ID] = @EVEN_ID
+GO
+/****** Object:  StoredProcedure [dbo].[Investments_Delete]    Script Date: 17/04/2020 09:39:34 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
